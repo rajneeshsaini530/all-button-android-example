@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".CheckBoxExample">
+
+    <CheckBox
+        android:id="@+id/checkBox_java"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Java"
+        tools:layout_editor_absoluteX="94dp"
+        tools:layout_editor_absoluteY="167dp" />
+
+    <CheckBox
+        android:id="@+id/checkBox_html"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="HTML"
+        tools:layout_editor_absoluteX="162dp"
+        tools:layout_editor_absoluteY="438dp" />
+
+    <CheckBox
+        android:id="@+id/checkBox_php"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PHP"
+        tools:layout_editor_absoluteX="115dp"
+        tools:layout_editor_absoluteY="312dp" />
+
+
+
+    <CheckBox
+        android:id="@+id/checkBox_android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Android"
+        tools:layout_editor_absoluteX="138dp"
+        tools:layout_editor_absoluteY="599dp" />
+
+</LinearLayout>
