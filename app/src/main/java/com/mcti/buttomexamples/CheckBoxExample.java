@@ -2,12 +2,17 @@ package com.mcti.buttomexamples;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.CompoundButton;
 import android.widget.RadioGroup;
 import android.widget.Toast;
+
+import com.google.android.material.chip.Chip;
 
 public class CheckBoxExample extends AppCompatActivity implements CheckBox.OnCheckedChangeListener {
 
@@ -24,8 +29,15 @@ public class CheckBoxExample extends AppCompatActivity implements CheckBox.OnChe
         checkBoxJava.setOnCheckedChangeListener(this);
         checkBoxHTML.setOnCheckedChangeListener(this);
         checkBoxPHP.setOnCheckedChangeListener(this);
-        
-        
+
+
+        Button button = findViewById(R.id.next_check);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(CheckBoxExample.this, ChipExample.class));
+            }
+        });
         
     }
 
@@ -66,5 +78,7 @@ public class CheckBoxExample extends AppCompatActivity implements CheckBox.OnChe
 
             }
         }
+
+
     }
 }

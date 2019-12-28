@@ -13,4 +13,11 @@
         android:layout_height="wrap_content"
         tools:layout_editor_absoluteX="191dp"
         tools:layout_editor_absoluteY="357dp" />
+
+    <Button
+        android:id="@+id/next_switch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:text="Next" />
 </LinearLayout>
